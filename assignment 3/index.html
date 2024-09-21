@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Art Gallery - Home</title>
+
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+
+        .carousel {
+            display: flex;
+            overflow-x: scroll;
+            scroll-snap-type: x mandatory;
+            gap: 1rem;
+        }
+
+            .carousel img {
+                scroll-snap-align: center;
+                min-width: 100%;
+            }
+
+
+        @media (max-width: 768px) {
+            .navbar-nav {
+                display: flex;
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+ 
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Art Gallery</a>
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="exhibitions.html">Exhibitions</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <div class="container mt-4">
+        <div class="carousel">
+            <img src="https://via.placeholder.com/800x400?text=Gallery+Image+1" alt="Gallery Image 1">
+            <img src="https://via.placeholder.com/800x400?text=Gallery+Image+2" alt="Gallery Image 2">
+            <img src="https://via.placeholder.com/800x400?text=Gallery+Image+3" alt="Gallery Image 3">
+        </div>
+    </div>
+
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-lg-6 col-md-12">
+                <h2>About Us</h2>
+                <p>We house exquisite pieces of art from around the world.</p>
+                <button class="btn btn-primary mt-3">Learn More</button>
+            </div>
+            <div class="col-lg-6 col-md-12">
+                <img src="https://via.placeholder.com/600x400?text=Art+Gallery" class="img-fluid" alt="Art Gallery">
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card">
+                    <img src="https://via.placeholder.com/400x200?text=Art+Piece+1" class="card-img-top" alt="Art 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Art Piece 1</h5>
+                        <p class="card-text">A stunning piece from the modern era.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card">
+                    <img src="https://via.placeholder.com/400x200?text=Art+Piece+2" class="card-img-top" alt="Art 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Art Piece 2</h5>
+                        <p class="card-text">An example of surrealism at its finest.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card">
+                    <img src="https://via.placeholder.com/400x200?text=Art+Piece+3" class="card-img-top" alt="Art 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Art Piece 3</h5>
+                        <p class="card-text">An abstract masterpiece.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <footer class="bg-dark text-white text-center p-4 mt-5">
+        <p>&copy; 2024 Art Gallery. All Rights Reserved.</p>
+    </footer>
+
+</body>
+
+</html>
