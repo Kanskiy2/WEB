@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>In calss practice</title>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <h1>JavaScript Tasks</h1>
+
+    <h3>Task 1 Calculator</h3>
+    <label for="calcNum1">1st Number:</label>
+    <input type="number" id="calcNum1">
+    <label for="calcNum2">2nd Number:</label>
+    <input type="number" id="calcNum2">
+    <button onclick="performCalculation('multiply')">Multiply</button>
+    <button onclick="performCalculation('divide')">Divide</button>
+    <p id="calcResult">Result: </p>
+
+    <h3>Task 2 Find the Largest of Three Integers</h3>
+    <label for="largestNum1">1st Integer:</label>
+    <input type="number" id="largestNum1">
+    <label for="largestNum2">2nd Integer:</label>
+    <input type="number" id="largestNum2">
+    <label for="largestNum3">3rd Integer:</label>
+    <input type="number" id="largestNum3">
+    <button onclick="findLargest()">Find Largest</button>
+    <p id="largestResult">Result: </p>
+
+    <h3>Task 3 Sum of Two Integers </h3>
+    <label for="sumNum1">1st Integer:</label>
+    <input type="number" id="sumNum1">
+    <label for="sumNum2">2nd Integer:</label>
+    <input type="number" id="sumNum2">
+    <button onclick="calculateSumTriple()">Calculate Sum</button>
+    <p id="sumTripleResult">Result: </p>
+
+    <h3>Task 4 Closest to 100</h3>
+    <label for="closeNum1">1st Value:</label>
+    <input type="number" id="closeNum1">
+    <label for="closeNum2">2nd Value:</label>
+    <input type="number" id="closeNum2">
+    <button onclick="calculateClosestTo100()">Find Closest</button>
+    <p id="closestResult">Result: </p>
+
+    <h3>Task 4 First Half of Even-Length String</h3>
+    <label for="inputString">Enter a String:</label>
+    <input type="text" id="inputString">
+    <button onclick="extractFirstHalf()">Extract First Half</button>
+    <p id="firstHalfResult">Result: </p>
+    
+</body>
+</html>
