@@ -14,16 +14,13 @@ function performCalculation(operation) {
 }
 
 // Task 2
-function calculateSumTriple() {
-    const num1 = parseInt(document.getElementById("sumNum1").value);
-    const num2 = parseInt(document.getElementById("sumNum2").value);
-    const result = sumTriple(num1, num2);
-    document.getElementById("sumTripleResult").innerText = "Result: " + result;
-}
-
-function sumTriple(a, b) {
-    return a === b ? 3 * (a + b) : a + b;
-}
+function findLargest() {
+    const num1 = parseInt(document.getElementById("largestNum1").value);
+    const num2 = parseInt(document.getElementById("largestNum2").value);
+    const num3 = parseInt(document.getElementById("largestNum3").value);
+    
+    const result = Math.max(num1, num2, num3);
+    document.getElementById("largestResult").innerText = "Result: " + result;
 
 // Task 3
 function calculateClosestTo100() {
@@ -61,12 +58,14 @@ function first_half(str) {
     }
 }
 
-// Task 5
-function findLargest() {
-    const num1 = parseInt(document.getElementById("largestNum1").value);
-    const num2 = parseInt(document.getElementById("largestNum2").value);
-    const num3 = parseInt(document.getElementById("largestNum3").value);
-    
-    const result = Math.max(num1, num2, num3);
-    document.getElementById("largestResult").innerText = "Result: " + result;
+}// Task 5
+function calculateSumTriple() {
+    const num1 = parseInt(document.getElementById("sumNum1").value);
+    const num2 = parseInt(document.getElementById("sumNum2").value);
+    const result = sumTriple(num1, num2);
+    document.getElementById("sumTripleResult").innerText = "Result: " + result;
+}
+
+function sumTriple(a, b) {
+    return a === b ? 3 * (a + b) : a + b;
 }
